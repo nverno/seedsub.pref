@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+./make_docs
+Rscript write.R

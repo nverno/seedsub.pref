@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd)"
+
+mkdir man
+
+tmpdir=$(mktemp -d)
+cd $tmpdir
+
+# cleaned data
+git clone https://github.com/nverno/seedsub
+R CMD Rd2pdf -o "$DIR/man/seedsub.pdf" seedsub/man/*.Rd
+
+# raw data
+git clone https://github.com/nverno/seedsub.mas
+R CMD Rd2pdf -o "$DIR/man/seedsub_master.pdf" seedsub.mas/man/*.Rd
+

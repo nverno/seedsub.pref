@@ -1,8 +1,8 @@
 Package: seedsub.pref
-Title: What the Package Does (one line, title case)
+Title: Looks at seedling - substrate preferences for moosilauke seedlings.
 Version: 0.0.0.9000
 Authors@R: "Noah Peart <noah.v.peart@gmail.com> [aut,cre]"
-Description: What the package does (one paragraph).
+Description: Do some exploratory stuff to get an idea for seedling preference for different substrates on moosilauke, and how if it appears to vary by species/aspect/elevation.
 Depends: R (>= 3.3.2)
 License: WTFPL
 Encoding: UTF-8
